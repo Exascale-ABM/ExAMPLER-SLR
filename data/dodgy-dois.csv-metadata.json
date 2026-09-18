@@ -1,0 +1,24 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "dodgy-dois.csv",
+    "dc:title": "List of DOIs found either not to be unique, or believed to be mis-entered",
+    "dc:author": "ExAMPLER project team",
+    "tableSchema": {
+        "columns": [{
+            "titles": "doi",
+            "dc:description": "DOI found in Scopus and/or Web of Science",
+        },{
+            "titles": "n.scopus",
+            "dc:description": "Number of times this DOI was found in Scopus"
+            "datatype": "integer"
+        },{
+            "titles": "n.wos",
+            "dc:description": "Number of times this DOI was found in Web of Science",
+            "datatype": "integer"
+        },{
+            "titles": "n.unmerged",
+            "dc:description": "Number of times this DOI was not merged because the difference in year was more than 1",
+            "datatype": "integer"
+        }]
+    }
+}

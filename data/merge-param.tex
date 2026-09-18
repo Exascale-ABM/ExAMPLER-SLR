@@ -1,0 +1,25 @@
+\begin{table}[!t]
+	\centering
+	\begin{tabular}{lrp{9cm}}
+    	\toprule
+        Parameter & Value & Description \\
+    	\midrule
+        $c_1$ & 3 & Increment for each surname and initial author and/or editor match \\
+        $c_2$ & 1 & Increment for each surname only author/editor match \\
+        $d_\texttt{abstract}$ & 0.95 & Decay term for \texttt{abstract} score \\
+        $d_\texttt{title}$ & 0.8 & Decay term for \texttt{title} score \\
+        $w_\texttt{abstract}$ & 10 & Weight applied to the normalized \texttt{abstract} score \\
+        $w_\texttt{author}$ & 3 & Weight applied to the normalized \texttt{author} score \\
+        $w_\texttt{booktitle}$ 1 & Weight applied to the normalized \texttt{booktitle} score \\
+        $w_\texttt{editor}$ & 2 & Weight applied to the normalized \texttt{editor} score \\
+        $w_\texttt{journal}$ & 4 & Weight applied to the normalized \texttt{journal} score \\
+        $w_\texttt{number}$ & 1 & Weight applied to the normalized \texttt{number} score \\
+        $w_\texttt{pages}$ & 1 & Weight applied to the normalized \texttt{pages} score \\
+        $w_\texttt{title}$ & 5 & Weight applied to the normalized \texttt{title} score \\
+        $w_\texttt{volume}$ & 1 & Weight applied to the normalized \texttt{volume} score \\
+        $w_\texttt{year}$ & 2 & Weight applied to the normalized \texttt{year} score \\
+    	\bottomrule			
+	\end{tabular}
+	\caption{Parameters used for automated merging of BibTeX data from Scopus and Web of Science}
+	\label{tab:merge-parameters}	
+\end{table}
